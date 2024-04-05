@@ -49,7 +49,7 @@ public class Main {
         }
 
         int result;
-        if ((isRoman1 != isRoman2) || (number1 < 1) || (number1 > 11) || (number2 < 1) || (number2 > 11)) {
+        if ((isRoman1 != isRoman2) || (number1 < 1) || (number1 >= 11) || (number2 < 1) || (number2 >= 11)) {
             throw new CalcException("Некорректный ввод");
         }
 
